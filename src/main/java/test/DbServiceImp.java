@@ -64,7 +64,7 @@ public class DbServiceImp implements DbService{
     }
 
     public String deleteStudent(Student e) throws Exception {
-        String q = "delete fros student where roll_no= ?;" ;
+        String q = "delete from student where roll_no= ?;" ;
         Class.forName("com.mysql.jdbc.Driver").newInstance();
         Connection conn= (Connection) DriverManager.getConnection(dbURL, username, password);
 
