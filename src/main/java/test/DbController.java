@@ -26,6 +26,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @RestController
 public class DbController {
     
+    
     @Autowired
     private DbService dbService;
     @RequestMapping(value="/insert" , headers = {
